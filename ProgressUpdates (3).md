@@ -28,3 +28,18 @@
 
 ### Any blocking issues/challenges need to be addressed?
 * Some small issues with Git repository that should be fixed soon
+
+## Week 3 (Mar 22 – Mar 29)
+
+### What did your team do last week?
+* Nearly finished research on illnesses
+* Cleaned up class structure a lot
+* Worked on the GUI
+
+### What will you do this week?
+* Finish research
+* Get calculations correct for each illness
+* Connect the GUI to the program
+
+### Any blocking issues/challenges need to be addressed?
+* Update Class UML, as the class structure changed drastically
