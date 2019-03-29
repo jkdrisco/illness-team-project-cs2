@@ -27,7 +27,7 @@ public class Main extends Application implements Initializable {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		final FXMLLoader loader = new FXMLLoader(getClass().getResource("WinnerWinnerChickenDinner"));
+		final FXMLLoader loader = new FXMLLoader(getClass().getResource("GUI2"));
 		final Pane p = loader.load();
 
 		primaryStage.setScene(new Scene(p));
