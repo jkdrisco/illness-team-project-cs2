@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1020.0" prefWidth="1925.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane prefHeight="411.0" prefWidth="600.0">
          <top>
-            <HBox prefHeight="188.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="188.0" prefWidth="705.0" BorderPane.alignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" text="Computer Science">
                      <HBox.margin>

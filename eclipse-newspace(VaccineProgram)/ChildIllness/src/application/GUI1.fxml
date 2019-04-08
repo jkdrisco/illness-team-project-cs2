@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="253.0" prefWidth="866.0">
+         <children>
+            <Pane prefHeight="327.0" prefWidth="867.0">
+               <children>
+                  <ImageView fitHeight="285.0" fitWidth="867.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/father-daughter-beach-sea-38302%20(3).jpeg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="DIMGRAY" layoutX="23.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here to help you make your first step.">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#696969" layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Child">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <Text fill="TURQUOISE" layoutX="140.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="care">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox prefHeight="420.0" prefWidth="866.0">
+         <children>
+            <Pane prefHeight="181.0" prefWidth="866.0">
+               <children>
+                  <Text fill="DIMGRAY" layoutX="266.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ChildCare should not be used as a replacement for an actual doctor. ">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Text>
+                  <Pane prefHeight="419.0" prefWidth="433.0">
+                     <children>
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="130.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="160.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="190.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="220.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="250.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="280.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="310.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="340.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="370.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Temperature">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vomiting">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Headache">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fatigue">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Excessive Sweating">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nausea">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sore Throat">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diarrhea">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fever">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="190.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Heart Rate">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="130.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="370.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="160.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="220.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="250.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="280.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="310.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="340.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Blood Pressure">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confusion">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seizures">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dizziness">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stomachache">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Red Eyes">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="389.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wheezing">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="391.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drooling">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                     </children></Pane>
+                  <Text fill="DIMGRAY" layoutX="320.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose from the following symptoms." />
+                  <Pane layoutX="433.0" layoutY="14.0" prefHeight="252.0" prefWidth="433.0" translateY="-1.0">
+                     <children>
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="150.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="120.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="360.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="300.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="180.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="270.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="240.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="210.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="330.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voice Loss">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulties Swallowing">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Runny Nose">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nasal Congestion">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abdominal Pain">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hives">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Low Blood Pressure">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bad Breath">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="244.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chills">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="259.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go!" translateX="-6.0" translateY="-4.0">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <TextField layoutX="201.0" layoutY="55.0" prefHeight="26.0" prefWidth="465.0" />
+                  <Button layoutX="676.0" layoutY="52.0" mnemonicParsing="false" style="-fx-background-color: turquoise;" textFill="TURQUOISE" translateY="4.0">
+                     <graphic>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Go!">
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Text>
+                     </graphic></Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
