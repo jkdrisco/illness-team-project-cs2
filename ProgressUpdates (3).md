@@ -43,3 +43,20 @@
 
 ### Any blocking issues/challenges need to be addressed?
 * Update Class UML, as the class structure changed drastically
+
+## Week 4 (Mar 29 – Apr 5)
+
+### What did your team do last week?
+* Finished research on illnesses
+* Finished the back end coding (for the most part)
+* Nearly finished up the GUI
+
+### What will you do this week?
+* Finish polishing the GUI
+* Link the GUI with the back end
+* Potentially add PDF compatibility
+
+### Any blocking issues/challenges need to be addressed?
+* Update Class UML, as the class structure changed drastically
+* Some issues with our GUI that are holding us back from finishing it all up
+

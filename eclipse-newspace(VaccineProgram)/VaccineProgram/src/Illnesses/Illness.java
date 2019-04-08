@@ -14,5 +14,4 @@ public abstract class Illness{
 	public abstract int calculate();
 	public abstract String getSymptoms();
 	public abstract String getDesc();
-	public abstract String getAgeRange();
 }
