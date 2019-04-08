@@ -1,4 +1,23 @@
 package application;
+
+import illnessClasses.AsepticMeningitis;
+import illnessClasses.Asthma;
+import illnessClasses.Campylobacter;
+import illnessClasses.CerebellarAtaxia;
+import illnessClasses.Croup;
+import illnessClasses.EColi;
+import illnessClasses.Encephalitis;
+import illnessClasses.FoodAllergies;
+import illnessClasses.FoodPoisoning;
+import illnessClasses.Measles;
+import illnessClasses.Mumps;
+import illnessClasses.Pneumonia;
+import illnessClasses.Rotavirus;
+import illnessClasses.Salmonella;
+import illnessClasses.Sepsis;
+import illnessClasses.StomachBug;
+import illnessClasses.Tonsillitis;
+import illnessClasses.WhoopingCough;
 	
 import java.net.URL;
 import java.util.Random;
