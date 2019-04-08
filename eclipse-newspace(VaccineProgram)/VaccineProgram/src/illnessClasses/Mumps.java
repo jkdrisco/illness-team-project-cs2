@@ -9,7 +9,7 @@ public class Mumps extends Illness {
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
-	private double cap = 4;
+	private double cap = 100;
 	private int ageLow = 0;
 	private int ageHigh = 16;
 	
@@ -22,11 +22,23 @@ public class Mumps extends Illness {
 	@Override
 	public int calculate() {
 		for (int i = 0; i < symptoms.size(); i++) {
-			if (symptoms.get(i).toUpperCase().matches("RUNNY NOSE")) {
-				possib++;
+			if (symptoms.get(i).toUpperCase().matches("FEVER")) {
+				possib += 20;
+			}
+			else if (symptoms.get(i).toUpperCase().matches("HEADACHE")) {
+				possib += 20;
+			}
+			else if (symptoms.get(i).toUpperCase().matches("MUSCLE ACHES")) {
+				possib += 20;
+			}
+			else if (symptoms.get(i).toUpperCase().matches("TIREDNESS")) {
+				possib += 20;
+			}
+			else if (symptoms.get(i).toUpperCase().matches("LOSS OF APPETITE")) {
+				possib += 20;
 			}
 			else {
-				cap++;
+				cap += 10;
 			}
 		}
 		return (int) (10 * (possib / cap));
@@ -34,17 +46,11 @@ public class Mumps extends Illness {
 	
 	@Override
 	public String getSymptoms() {
-		return String.format("The symptoms for chickenpox are ");
+		return String.format("The symptoms for mumps are fever, headache, muscle aches, tiredness, and loss of appetite.");
 	}
 	
 	@Override
 	public String getDesc() {
-		return String.format("Chickenpox is an illness that ");
+		return String.format("Mumps is a viral infection that affects the salivary glands that's easily preventable by a vaccine.");
 	}
-	
-	@Override
-	public String getAgeRange() {
-		return String.format("The age range for chickenpox is %d to %d.%n", ageLow, ageHigh);
-	}
-
 }

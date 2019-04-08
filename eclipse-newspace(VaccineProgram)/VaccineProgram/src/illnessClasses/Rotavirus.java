@@ -9,7 +9,7 @@ public class Rotavirus extends Illness {
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
-	private double cap = 4;
+	private double cap = 100;
 	private int ageLow = 0;
 	private int ageHigh = 16;
 	
@@ -22,11 +22,26 @@ public class Rotavirus extends Illness {
 	@Override
 	public int calculate() {
 		for (int i = 0; i < symptoms.size(); i++) {
-			if (symptoms.get(i).toUpperCase().matches("RUNNY NOSE")) {
-				possib++;
+			if (symptoms.get(i).toUpperCase().matches("DIARRHEA")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("HIGH TEMP")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("DRY MOUTH")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("VOMITING")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("DEHYDRATION")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("SLEEPINESS")) {
+				possib += (50/3);
 			}
 			else {
-				cap++;
+				cap += 10;
 			}
 		}
 		return (int) (10 * (possib / cap));
@@ -34,17 +49,11 @@ public class Rotavirus extends Illness {
 	
 	@Override
 	public String getSymptoms() {
-		return String.format("The symptoms for chickenpox are ");
+		return String.format("The symptoms for rotavirus are diarrhea, high temp, dry mouth, vomiting, dehydration, and sleepiness.");
 	}
 	
 	@Override
 	public String getDesc() {
-		return String.format("Chickenpox is an illness that ");
+		return String.format("Rotaviruses are the most common cause of diarrhoeal disease among infants and young children.");
 	}
-	
-	@Override
-	public String getAgeRange() {
-		return String.format("The age range for chickenpox is %d to %d.%n", ageLow, ageHigh);
-	}
-
 }

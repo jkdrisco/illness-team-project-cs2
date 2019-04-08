@@ -9,7 +9,7 @@ public class FoodPoisoning extends Illness {
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
-	private double cap = 4;
+	private double cap = 100;
 	private int ageLow = 0;
 	private int ageHigh = 16;
 	
@@ -22,11 +22,26 @@ public class FoodPoisoning extends Illness {
 	@Override
 	public int calculate() {
 		for (int i = 0; i < symptoms.size(); i++) {
-			if (symptoms.get(i).toUpperCase().matches("RUNNY NOSE")) {
-				possib++;
+			if (symptoms.get(i).toUpperCase().matches("DIARRHEA")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("STOMACH CRAMPS")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("NAUSEA")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("VOMITING")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("FEVER")) {
+				possib += (50/3);
+			}
+			else if (symptoms.get(i).toUpperCase().matches("UPSET STOMACH")) {
+				possib += (50/3);
 			}
 			else {
-				cap++;
+				cap += 10;
 			}
 		}
 		return (int) (10 * (possib / cap));
@@ -34,17 +49,11 @@ public class FoodPoisoning extends Illness {
 	
 	@Override
 	public String getSymptoms() {
-		return String.format("The symptoms for chickenpox are ");
+		return String.format("The symptoms for food poisoning are diarrhea, stomach cramps, nausea, vomiting, fever, and upset stomach.");
 	}
 	
 	@Override
 	public String getDesc() {
-		return String.format("Chickenpox is an illness that ");
+		return String.format("Food poisoning is an illness caused by food contaminated with bacteria, viruses, parasites, or toxins.");
 	}
-	
-	@Override
-	public String getAgeRange() {
-		return String.format("The age range for chickenpox is %d to %d.%n", ageLow, ageHigh);
-	}
-
 }
