@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -24,25 +25,20 @@ public class Main extends Application implements Initializable {
 
 	@FXML
 	Text myText;
-
+   
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		final FXMLLoader loader = new FXMLLoader(getClass().getResource("GUI2"));
+		final FXMLLoader loader = new FXMLLoader(getClass().getResource("GUI1.fxml"));
 		final Pane p = loader.load();
-
+	        
 		primaryStage.setScene(new Scene(p));
 		primaryStage.show();
 	}
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		myButton.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				myText.setText(String.format("Value: %d", (new Random()).nextInt(200)));
-			}
-		});
 	}
+	
 	public static void main(String[] args) {
 		launch(args);
+		}
 	}
-}

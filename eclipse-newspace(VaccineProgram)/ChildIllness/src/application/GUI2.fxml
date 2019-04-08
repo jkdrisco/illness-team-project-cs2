@@ -2,7 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -15,13 +15,6 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox prefHeight="741.0" prefWidth="110.0" style="-fx-background-color: dimGrey;" />
-      <VBox layoutX="100.0" prefHeight="670.0" prefWidth="657.0" style="-fx-background-color: whitegrey;">
-         <effect>
-            <ColorAdjust />
-         </effect>
-      </VBox>
-      <VBox layoutX="756.0" prefHeight="741.0" prefWidth="110.0" style="-fx-background-color: dimgrey;" />
       <BorderPane prefHeight="670.0" prefWidth="866.0">
          <top>
             <HBox prefHeight="100.0" prefWidth="859.0" style="-fx-background-color: MediumTurquoise;" BorderPane.alignment="CENTER">
@@ -34,11 +27,17 @@
                         <Insets left="10.0" right="25.0" top="10.0" />
                      </HBox.margin>
                   </Text>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="22.0" stroke="WHITESMOKE" strokeType="INSIDE" width="21.0">
+                  <Button minHeight="18.0" minWidth="18.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="18.0" style="-fx-background-color: white;" textFill="WHITE" translateX="20.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                      <HBox.margin>
-                        <Insets bottom="10.0" left="650.0" top="15.0" />
+                        <Insets left="630.0" top="10.0" />
                      </HBox.margin>
-                  </Rectangle>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Button>
                </children>
             </HBox>
          </top>
@@ -113,8 +112,17 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Button layoutX="433.0" layoutY="110.0" minHeight="21.0" minWidth="48.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="46.0" style="-fx-background-color: dimgrey;" text="PDF" />
+                        <Text layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold.&#10;" wrappingWidth="425.69921875" />
+                        <Pane layoutY="-44.0" prefHeight="49.0" prefWidth="648.0">
+                           <children>
+                              <TextField layoutX="28.0" layoutY="12.0" prefHeight="26.0" prefWidth="520.0" />
+                              <Button layoutX="555.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: dimgrey;" text="Go!" textFill="WHITE" translateX="5.0" translateY="3.0" />
+                           </children>
+                        </Pane>
+                        <Button layoutX="444.0" layoutY="115.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: turquoise;" text="PDF" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Button>
                      </children>
                   </Pane>
                   <Pane layoutX="111.0" layoutY="193.0" prefHeight="154.0" prefWidth="498.0">
@@ -124,8 +132,11 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Button layoutX="430.0" layoutY="108.0" mnemonicParsing="false" style="-fx-background-color: dimgrey;" text="PDF" />
+                        <Text layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A fever is a body temperature that is higher than normal. A normal temperature can vary from person to person, but it is usually around 98.6 F. A fever is not a disease. It is usually a sign that your body is trying to fight an illness or infection." wrappingWidth="429.0" />
+                        <Button layoutX="444.0" layoutY="115.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: turquoise;" text="PDF" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Button>
                      </children>
                   </Pane>
                   <Pane layoutX="110.0" layoutY="493.0" prefHeight="154.0" prefWidth="498.0">
@@ -135,8 +146,11 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Button layoutX="430.0" layoutY="108.0" mnemonicParsing="false" style="-fx-background-color: dimgrey;" text="PDF" />
+                        <Text layoutX="12.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Croup refers to an infection of the upper airway, which obstructs breathing and causes a characteristic barking cough.&#10;&#10;" wrappingWidth="376.9830722808838" />
+                        <Button layoutX="444.0" layoutY="115.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: turquoise;" text="PDF" textFill="WHITE" translateY="-2.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Button>
                      </children>
                   </Pane>
                   <Pane layoutX="110.0" layoutY="340.0" prefHeight="154.0" prefWidth="498.0">
@@ -146,13 +160,18 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Button layoutX="430.0" layoutY="108.0" mnemonicParsing="false" style="-fx-background-color: dimgrey;" text="PDF" />
+                        <Text layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bronchitis is an inflammation of the bronchial tubes, the airways that carry air to your lungs. It causes a cough that often brings up mucus. It can also cause shortness of breath, wheezing, a low fever, and chest tightness. There are two main types of bronchitis: acute and chronic.&#10;" wrappingWidth="402.9830722808838" />
+                        <Button layoutX="444.0" layoutY="115.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: turquoise;" text="PDF" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Button>
                      </children>
                   </Pane>
                </children>
             </Pane>
          </center>
       </BorderPane>
+      <VBox layoutY="100.0" prefHeight="641.0" prefWidth="110.0" style="-fx-background-color: dimGrey;" />
+      <VBox layoutX="756.0" layoutY="100.0" prefHeight="641.0" prefWidth="110.0" style="-fx-background-color: dimgrey;" />
    </children>
 </AnchorPane>
