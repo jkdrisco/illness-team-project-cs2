@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import Illnesses.Illness;
 
-public class Encephalitis extends Illness {
-
+public class Encephalitis extends Illness implements Comparable<Illness>{
+	public int calc;
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
@@ -17,10 +17,11 @@ public class Encephalitis extends Illness {
 		super(input, age);
 		symptoms = input;
 		this.age = age;
+		calc = this.calculate(input);
 	}
 	
 	@Override
-	public int calculate() {
+	public int calculate(ArrayList<String> symptoms) {
 		for (int i = 0; i < symptoms.size(); i++) {
 			if (symptoms.get(i).toUpperCase().matches("SEVERE HEADACHE")) {
 				possib += 26;
@@ -48,12 +49,44 @@ public class Encephalitis extends Illness {
 	}
 	
 	@Override
+	public String getName() {
+		return "Encephalitis";
+	}
+	
+	@Override
 	public String getSymptoms() {
 		return String.format("The symptoms for encephalitis are severe headache, sudden fever, fatigue, vomiting, confusion, and seizures.");
 	}
 	
 	@Override
+	public String getCalc() {
+		return String.format("%d", calc);
+	}
+	
+	@Override
 	public String getDesc() {
 		return String.format("Encephalitis is an inflmation of the brain, most commonly due to an infection.");
+	}
+	
+	@Override
+	public int compareTo(Illness ill) {
+		int compareCalc = ((Illness) ill).calc; 
+		
+		return this.calc - compareCalc;
+	}
+	
+	@Override
+	public String getRarity() {
+		return "Rare";
+	}
+	
+	@Override
+	public int calcNum() {
+		return calc;
+	}
+	
+	@Override
+	public int rarityNum() {
+		return 2;
 	}
 }

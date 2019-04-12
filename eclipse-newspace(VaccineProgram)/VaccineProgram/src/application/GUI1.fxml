@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
    <children>
       <HBox prefHeight="253.0" prefWidth="866.0">
          <children>
@@ -19,7 +19,7 @@
                <children>
                   <ImageView fitHeight="285.0" fitWidth="867.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../Pictures/father-daughter-beach-sea-38302%20(3).jpeg" />
+                        <Image url="@father-daughter-beach-sea-38302%20(3).jpeg" />
                      </image>
                   </ImageView>
                   <Text fill="DIMGRAY" layoutX="23.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here to help you make your first step.">
@@ -160,9 +160,21 @@
                               <Font name="Calibri" size="14.0" />
                            </font>
                         </Text>
+                        <Text fill="DIMGRAY" layoutX="324.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose from the following symptoms." />
+                        <Circle fill="TURQUOISE" layoutX="80.0" layoutY="100.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Circle fill="TURQUOISE" layoutX="380.0" layoutY="100.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fill="DIMGRAY" layoutX="92.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cough">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="DIMGRAY" layoutX="389.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Body Aches" translateX="3.0">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
                      </children></Pane>
-                  <Text fill="DIMGRAY" layoutX="320.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose from the following symptoms." />
-                  <Pane layoutX="433.0" layoutY="14.0" prefHeight="252.0" prefWidth="433.0" translateY="-1.0">
+                  <Pane layoutX="433.0" layoutY="15.0" prefHeight="252.0" prefWidth="433.0" translateY="-3.0">
                      <children>
                         <Circle fill="TURQUOISE" layoutX="230.0" layoutY="150.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
                         <Circle fill="TURQUOISE" layoutX="230.0" layoutY="120.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
@@ -218,22 +230,29 @@
                               <Font name="Calibri" size="14.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="259.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go!" translateX="-6.0" translateY="-4.0">
+                        <Text fill="WHITE" layoutX="259.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go!" translateX="-6.0" translateY="-23.0">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="myTF" layoutX="-232.0" layoutY="23.0" prefHeight="26.0" prefWidth="465.0" />
+                        <Button fx:id="myButton" layoutX="246.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: turquoise;" textFill="TURQUOISE">
+                           <graphic>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Go!">
+                                 <font>
+                                    <Font name="Calibri" size="12.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                        <Circle fill="TURQUOISE" layoutX="230.0" layoutY="90.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fill="DIMGRAY" layoutX="240.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loss of Appetite" translateX="3.0">
                            <font>
                               <Font name="Calibri" size="14.0" />
                            </font>
                         </Text>
                      </children>
                   </Pane>
-                  <TextField layoutX="201.0" layoutY="55.0" prefHeight="26.0" prefWidth="465.0" />
-                  <Button layoutX="676.0" layoutY="52.0" mnemonicParsing="false" style="-fx-background-color: turquoise;" textFill="TURQUOISE" translateY="4.0">
-                     <graphic>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Go!">
-                           <font>
-                              <Font name="Calibri" size="12.0" />
-                           </font>
-                        </Text>
-                     </graphic></Button>
                </children>
             </Pane>
          </children>

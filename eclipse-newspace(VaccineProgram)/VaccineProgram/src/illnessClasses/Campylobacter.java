@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import Illnesses.Illness;
 
-public class Campylobacter extends Illness {
-
+public class Campylobacter extends Illness implements Comparable<Illness>{
+	public int calc;
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
@@ -17,10 +17,11 @@ public class Campylobacter extends Illness {
 		super(input, age);
 		symptoms = input;
 		this.age = age;
+		calc = this.calculate(input);
 	}
 	
 	@Override
-	public int calculate() {
+	public int calculate(ArrayList<String> symptoms) {
 		for (int i = 0; i < symptoms.size(); i++) {
 			if (symptoms.get(i).toUpperCase().matches("ABDOMINAL CRAMPS")) {
 				possib += (100/3);
@@ -39,12 +40,44 @@ public class Campylobacter extends Illness {
 	}
 	
 	@Override
+	public String getName() {
+		return "Campylobacter";
+	}
+	
+	@Override
 	public String getSymptoms() {
 		return String.format("The symptoms for campylobacter are abdominal cramps, diarrhea, and fever.");
 	}
 	
 	@Override
+	public String getCalc() {
+		return String.format("%d", calc);
+	}
+	
+	@Override
 	public String getDesc() {
 		return String.format("Campylobacter is among the common bacterial infections of humans, most commonly a foodborne illness.");
+	}
+	
+	@Override
+	public int compareTo(Illness ill) {
+		int compareCalc = ((Illness) ill).calc; 
+		
+		return this.calc - compareCalc;
+	}
+	
+	@Override
+	public String getRarity() {
+		return "Common";
+	}
+	
+	@Override
+	public int calcNum() {
+		return calc;
+	}
+	
+	@Override
+	public int rarityNum() {
+		return 0;
 	}
 }

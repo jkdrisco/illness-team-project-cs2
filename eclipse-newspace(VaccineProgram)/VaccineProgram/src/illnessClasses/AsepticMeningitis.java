@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import Illnesses.Illness;
 
-public class AsepticMeningitis extends Illness {
-
+public class AsepticMeningitis extends Illness implements Comparable<Illness>{
+	public int calc;
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
@@ -17,10 +17,11 @@ public class AsepticMeningitis extends Illness {
 		super(input, age);
 		symptoms = input;
 		this.age = age;
+		calc = this.calculate(input);
 	}
 	
 	@Override
-	public int calculate() {
+	public int calculate(ArrayList<String> symptoms) {
 		for (int i = 0; i < symptoms.size(); i++) {
 			if (symptoms.get(i).toUpperCase().matches("FEVER")) {
 				possib += 10;
@@ -60,12 +61,44 @@ public class AsepticMeningitis extends Illness {
 	}
 	
 	@Override
+	public String getName() {
+		return "Aseptic meningitis";
+	}
+	
+	@Override
 	public String getSymptoms() {
 		return String.format("The symptoms for aseptic meningitis are fever, chills, stomachache, headache, body ache, loss of appetite, vomiting, fatigue, red eyes, and nausea.");
 	}
 	
 	@Override
+	public String getCalc() {
+		return String.format("%d", calc);
+	}
+	
+	@Override
 	public String getDesc() {
 		return String.format("Aseptic meningitis is an inflammation of the brain and spinal cord membranes, typically caused by an infection.");
+	}
+	
+	@Override
+	public int compareTo(Illness ill) {
+		int compareCalc = ((Illness) ill).calc; 
+		
+		return this.calc - compareCalc;
+	}
+	
+	@Override
+	public String getRarity() {
+		return "Rare";
+	}
+	
+	@Override
+	public int calcNum() {
+		return calc;
+	}
+	
+	@Override
+	public int rarityNum() {
+		return 2;
 	}
 }

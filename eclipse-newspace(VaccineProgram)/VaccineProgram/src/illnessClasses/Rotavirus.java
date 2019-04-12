@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import Illnesses.Illness;
 
-public class Rotavirus extends Illness {
-
+public class Rotavirus extends Illness implements Comparable<Illness>{
+	public int calc;
 	public ArrayList<String> symptoms = new ArrayList<>();
 	public int age;
 	private double possib = 0;
@@ -17,10 +17,11 @@ public class Rotavirus extends Illness {
 		super(input, age);
 		symptoms = input;
 		this.age = age;
+		calc = this.calculate(input);
 	}
 	
 	@Override
-	public int calculate() {
+	public int calculate(ArrayList<String> symptoms) {
 		for (int i = 0; i < symptoms.size(); i++) {
 			if (symptoms.get(i).toUpperCase().matches("DIARRHEA")) {
 				possib += (50/3);
@@ -48,12 +49,44 @@ public class Rotavirus extends Illness {
 	}
 	
 	@Override
+	public String getName() {
+		return "Rotavirus";
+	}
+	
+	@Override
 	public String getSymptoms() {
 		return String.format("The symptoms for rotavirus are diarrhea, high temp, dry mouth, vomiting, dehydration, and sleepiness.");
 	}
 	
 	@Override
+	public String getCalc() {
+		return String.format("%d", calc);
+	}
+	
+	@Override
 	public String getDesc() {
 		return String.format("Rotaviruses are the most common cause of diarrhoeal disease among infants and young children.");
+	}
+	
+	@Override
+	public int compareTo(Illness ill) {
+		int compareCalc = ((Illness) ill).calc; 
+		
+		return this.calc - compareCalc;
+	}
+	
+	@Override
+	public String getRarity() {
+		return "Common";
+	}
+	
+	@Override
+	public int calcNum() {
+		return calc;
+	}
+	
+	@Override
+	public int rarityNum() {
+		return 0;
 	}
 }
