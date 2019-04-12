@@ -60,3 +60,14 @@
 * Update Class UML, as the class structure changed drastically
 * Some issues with our GUI that are holding us back from finishing it all up
 
+## Week 5 (Apr 5 – Apr 12)
+
+### What did your team do last week?
+* Reworked and fixed GUI’s (switched GUI2 to coding)
+* Reworked illnessClasses with new functionalities
+* Linked the back and front ends and completed the program
+
+### What will you do this week?
+* Present our project, add instructions and the such
+
+### Any blocking issues/challenges need to be addressed?
