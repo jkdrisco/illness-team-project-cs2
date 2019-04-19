@@ -53,7 +53,7 @@ public class EColi extends Illness implements Comparable<Illness>{
 	
 	@Override
 	public String getDesc() {
-		return String.format("E. Coli is a bacterial infection sometimes caused by certain strains of the bacteria E. Coli.");
+		return String.format("E. coli is a common type of bacteria that normally lives inside your intestines, where it helps your body break down and digest the food you eat. However, certain types of E. coli can get from the intestines into the blood, causing a painful sickness.");
 	}
 	
 	@Override

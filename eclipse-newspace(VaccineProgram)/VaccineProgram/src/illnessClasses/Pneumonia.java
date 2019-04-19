@@ -73,7 +73,7 @@ public class Pneumonia extends Illness implements Comparable<Illness>{
 	
 	@Override
 	public String getDesc() {
-		return String.format("Pneumonia is an infection that inflames the air sacs in one or both lungs.");
+		return String.format("Pneumonia is a bacterial, viral, or fungal infection of one or both sides of the lungs that causes the air sacs, or alveoli, of the lungs to fill up with fluid or pus.");
 	}
 	@Override
 	public int compareTo(Illness ill) {

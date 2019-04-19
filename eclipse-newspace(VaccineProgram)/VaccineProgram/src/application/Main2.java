@@ -117,20 +117,20 @@ public class Main2 implements Initializable {
 			});
 	    
 	    Text illness1Sum = new Text(ill[0].getDesc());
-	    illness1Sum.setFont(Font.font ("System", 12));
+	    illness1Sum.setFont(Font.font ("System", 14));
 	    illness1Sum.wrappingWidthProperty().set(500);
 	   
 	    
 	    Text illness2Sum = new Text(ill[1].getDesc());
-	    illness2Sum.setFont(Font.font ("System", 12));
+	    illness2Sum.setFont(Font.font ("System", 14));
 	    illness2Sum.wrappingWidthProperty().set(500);
 	    
 	    Text illness3Sum = new Text(ill[2].getDesc());
-	    illness3Sum.setFont(Font.font ("System", 12));
+	    illness3Sum.setFont(Font.font ("System", 14));
 	    illness3Sum.wrappingWidthProperty().set(500);
 	    
 	    Text illness4Sum = new Text(ill[3].getDesc());
-	    illness4Sum.setFont(Font.font ("System", 12));
+	    illness4Sum.setFont(Font.font ("System", 14));
 	    illness4Sum.wrappingWidthProperty().set(500);
 
 	    Text ill1Rarity = new Text(ill[0].getRarity());
@@ -270,7 +270,7 @@ public class Main2 implements Initializable {
 	    
 	    
 	    HBox hbox2Addition = new HBox();
-	    hbox2Addition.setPadding(new Insets(5, 10, 10, 10));
+	    hbox2Addition.setPadding(new Insets(10, 10, 10, 10));
 	    hbox2Addition.setPrefWidth(546);
 	    hbox2Addition.setPrefHeight(110);
 	    hbox2Addition.setTranslateX(90);
@@ -287,7 +287,7 @@ public class Main2 implements Initializable {
 	    hbox3.getChildren().add(illness2Text);
 	    
 	    HBox hbox3Addition = new HBox();
-	    hbox3Addition.setPadding(new Insets(5, 10, 10, 10));
+	    hbox3Addition.setPadding(new Insets(10, 10, 10, 10));
 	    hbox3Addition.setPrefWidth(546);
 	    hbox3Addition.setPrefHeight(110);
 	    hbox3Addition.setTranslateX(90);
@@ -304,7 +304,7 @@ public class Main2 implements Initializable {
 	    hbox4.getChildren().add(illness3Sum);
 	    
 	    HBox hbox4Addition = new HBox();
-	    hbox4Addition.setPadding(new Insets(5, 10, 10, 10));
+	    hbox4Addition.setPadding(new Insets(10, 10, 10, 10));
 	    hbox4Addition.setPrefWidth(546);
 	    hbox4Addition.setPrefHeight(110);
 	    hbox4Addition.setTranslateX(90);
@@ -320,7 +320,7 @@ public class Main2 implements Initializable {
 	    hbox5.getChildren().add(illness4Text);
 	    
 	    HBox hbox5Addition = new HBox();
-	    hbox5Addition.setPadding(new Insets(5, 10, 10, 10));
+	    hbox5Addition.setPadding(new Insets(10, 10, 10, 10));
 	    hbox5Addition.setPrefWidth(546);
 	    hbox5Addition.setPrefHeight(110);
 	    hbox5Addition.setTranslateX(90);

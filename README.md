@@ -21,6 +21,28 @@ The user can list symptoms in a search bar (there will be a list of symptoms ava
 1. Polish interface
 - Week 5
 1. Bug fixing and program testing
+## Getting Started
+### Install
+1. Go to https://github.com/jkdrisco/illness-team-project-cs2
+2. Hit the green “Clone or Download” Button and hit “Download ZIP”
+3. Open Eclipse
+4. File -> Import Projects from File System
+5. Use the directory to search for the ZIP you just downloaded and click on the VaccineProgram folder within it, and press import
+6. You will now have ChildCare installed and able to run out of Eclipse
+### Run
+1. On the Package Explorer on the left side of the Eclipse window, open: VaccineProgram -> src -> application -> Main.java
+2. At the top of the window, click the green Run button
+3. ChildCare will now open and be ready for use
+## Features
+ChildCare is a work-in-progress program, but as of now it contains the following features:
+1. ~20 illnesses to detect
+2. ~30 symptoms to read in and evaluate
+3. Unlimited runs within each launch of the program
+4. Detailed descriptions of each illness, as well as their rarity
+5. A calculation for each illness backed up by medical research
+And more to come!
+## Demo Video
+https://www.youtube.com/watch?v=7CNaz5-4GXU
 ## Team Members
 - Jared Drisco: boss man, back end engineer
 - Nate Bland: front end engineer
